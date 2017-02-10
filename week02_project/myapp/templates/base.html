@@ -1,0 +1,70 @@
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+    <meta name="description" value="Example of a cool slideshow created with two carousels working together with animated scrolling thumbnails." />
+    <meta name="keywords" value="diashow, slideshow, thumbnails, slider, carousel, example, imageviewer" />
+  
+  
+ 
+
+  </head>
+
+
+
+  <style>
+    
+
+    body {
+
+    background: url(https://s-media-cache-ak0.pinimg.com/originals/87/46/37/874637bc449aeeb3cf7cd69e7fb08132.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #110905;
+  }
+/*
+  #header{
+    background: url(https://s-media-cache-ak0.pinimg.com/originals/87/46/37/874637bc449aeeb3cf7cd69e7fb08132.jpg);
+   background-size: cover;
+   background-position-y: -550px;
+  }*/
+</style>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">MyGallery</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="/person/">Profile</a></li>
+        </ul>
+      </div>
+    </nav>
+  <header>
+    <div class="row" id="header">
+        <br>
+        <h1 style="text-align: center;font-size: 68px;  color:#ffffff;background: rgba(86, 79, 75, 0.5);
+        background-size: auto 200px;font-family: Impact, Charcoal, sans-serif;">G  A  L  L  E  R  Y</h1>
+        <p style="text-align: center;font-size: 15px;  color:rgba(255, 255, 255, 0.5); font-style: italic;background-size: auto 200px;"> Choose your favorite images.</p>
+       <br>
+        <br>
+      </div>  
+    </header>
+      
+  
+      <div class="row">
+      
+          {% block content %}
+          {% endblock %}
+        
+      </div>
+  <p style="text-align: center;font-size: 15px;  color:rgba(255, 255, 255, 0.5); font-style: italic;background: rgba(86, 79, 75, 0.5); "> Choose your favorite images.</p>
+  </body>
+</html>

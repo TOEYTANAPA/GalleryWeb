@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<!-- background: rgba(181, 181, 181, .5);  -->
+<!--  <header>
+    <div class="row" id="header">
+        <br>
+        <h1 style="text-align: center;font-size: 58px;  color:#ffffff;">GALLERY</h1>
+        <br>
+      </div>  
+    </header>
+			 -->
+
+<!-- 	<div class="container" > -->
+
+	<div class="panel panel-default" style=" background: url(http://orig06.deviantart.net/dae5/f/2008/287/8/9/black_texture___ray_by_ethenyl.jpg);   border-color: rgba(130, 128, 128, 0.0)">
+  
+  <div class="panel-body" >
+	<br>
+
+		<div class="col-xs-7">
+		
+			<img src="../media/{{list.image}}"  width="400px" height="400px" style=" display: block; margin: 0 auto;">
+			<br>	
+			<p style="text-align:center;font-size: 18px;color:white;font-weight: bold;font-family: Verdana, Arial, Helvetica, sans-serif;"> Selected ID: {{list.id}}</p>
+			 <p style="text-align:center;font-size: 20px;color:white">{{list.description}}</p>
+			
+
+		</div>
+		
+			<div class="col-xs-5">
+			<div class="row">
+			<div class="container" >
+			<p style="font-size: 18px;color:white;font-weight: bold;font-family: Verdana, Arial, Helvetica, sans-serif;"> History</p>
+		
+			{% for i in listImg %}
+			<div class="col-xs-3">
+				<img src="../media/{{i.image}}"  width="100px" height="100px" style=" display: block; margin: 0 auto;">
+				<p style="color:white;font-family: Verdana, Arial, Helvetica, sans-serif;text-align:center;"> {{i.id}}</p>
+			</div>
+			{% endfor %}
+			</div>
+		</div>
+		<br><br><br>
+				<div class="row">
+				<div class="container" >
+				<p style="font-size: 18px;color:white;font-family: Verdana, Arial, Helvetica, sans-serif;color:rgba(255, 255, 255, 0.5)">Session :</p>
+				<p style="font-size: 15px;color:white;font-family: Verdana, Arial, Helvetica, sans-serif;color:rgba(255, 255, 255, 0.5)">{{session}}</p>
+		</div>
+
+</div>
+		</div>
+
+	
+
+			
+		
+ </div>
+ </div>		
+<!-- </div> -->
+
+{% endblock %}

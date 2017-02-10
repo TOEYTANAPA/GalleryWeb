@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<!-- background: rgba(181, 181, 181, .5);  -->
+<!--  <header>
+    <div class="row" id="header">
+        <br>
+        <h1 style="text-align: center;font-size: 58px;  color:#ffffff;">GALLERY</h1>
+        <br>
+      </div>  
+    </header>
+			 -->
+
+<!-- 	<div class="container" >
+	<br>
+	 -->
+
+	 <!-- border-color: rgba(130, 128, 128, 0.9) -->
+
+	<div class="panel panel-default" style=" background: url(http://orig06.deviantart.net/dae5/f/2008/287/8/9/black_texture___ray_by_ethenyl.jpg);   border-color: rgba(130, 128, 128, 0.0)">
+  
+  <div class="panel-body" >
+<div class="container" >
+<br>
+{% for i in img %}
+		
+			
+			<div class="col-xs-2">
+		
+				<a href="{% url 'gallery' i.id %}">
+					<img src="media/{{i.image}}"  width="170px" height="170px">
+					
+		
+				</a>
+			  		
+			  	<p style="text-align: center;color:#e0e0e0">{{i.description}}</p>
+				
+					<br>
+        	
+        	</div>
+
+	
+			{% endfor %}
+
+
+
+
+
+  </div>
+
+  </div>
+</div>
+	
+			
+			
+		<!-- 	<img src="../media/{{list.image}}">
+			<p>id: media/{{list.image}}</p>
+			
+			<p>session: {{session}}</p> -->
+<!-- 		
+ 		
+</div> -->
+
+{% endblock %}
